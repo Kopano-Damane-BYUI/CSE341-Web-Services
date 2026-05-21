@@ -5,7 +5,7 @@
     "description": "Contacts API Documentation",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://contacts-project-api-bcrq.onrender.com/",
   "basePath": "/",
   "schemes": [
     "http"
@@ -134,6 +134,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
