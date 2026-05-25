@@ -1,0 +1,96 @@
+### ROOT
+GET http://localhost:3000/
+
+#################################################
+################ STUDENTS #######################
+#################################################
+
+### GET ALL STUDENTS
+GET http://localhost:3000/students
+
+###
+
+### GET SINGLE STUDENT
+GET http://localhost:3000/students/PASTE_STUDENT_ID_HERE
+
+###
+
+### CREATE STUDENT
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "firstName": "David",
+  "lastName": "Miller",
+  "email": "david.miller@email.com",
+  "age": 26,
+  "course": "Artificial Intelligence",
+  "gpa": 3.8,
+  "enrollmentDate": "2026-05-26"
+}
+
+###
+
+### UPDATE STUDENT
+PUT http://localhost:3000/students/PASTE_STUDENT_ID_HERE
+Content-Type: application/json
+
+{
+  "firstName": "David",
+  "lastName": "Miller",
+  "email": "updateddavid@email.com",
+  "age": 27,
+  "course": "Machine Learning",
+  "gpa": 4.0,
+  "enrollmentDate": "2026-05-26"
+}
+
+###
+
+### DELETE STUDENT
+DELETE http://localhost:3000/students/PASTE_STUDENT_ID_HERE
+
+#################################################
+################ COURSES ########################
+#################################################
+
+### GET ALL COURSES
+GET http://localhost:3000/courses
+
+###
+
+### GET SINGLE COURSE
+GET http://localhost:3000/courses/PASTE_COURSE_ID_HERE
+
+###
+
+### CREATE COURSE
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+  "courseName": "Data Structures",
+  "instructor": "Professor Green",
+  "credits": 4,
+  "department": "Computer Science",
+  "semester": "Spring 2026"
+}
+
+###
+
+### UPDATE COURSE
+PUT http://localhost:3000/courses/PASTE_COURSE_ID_HERE
+Content-Type: application/json
+
+{
+  "courseName": "Advanced Data Structures",
+  "instructor": "Professor Green",
+  "credits": 5,
+  "department": "Computer Science",
+  "semester": "Summer 2026"
+}
+
+###
+
+### DELETE COURSE
+DELETE http://localhost:3000/courses/PASTE_COURSE_ID_HERE
