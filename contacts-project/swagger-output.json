@@ -5,10 +5,10 @@
     "description": "Contacts API Documentation",
     "version": "1.0.0"
   },
-  "host": "https://contacts-project-api-bcrq.onrender.com/",
+  "host": "contacts-project-api-bcrq.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
